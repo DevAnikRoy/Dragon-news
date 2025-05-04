@@ -11,9 +11,11 @@ const Navbar = () => {
                 <NavLink to="/about">About</NavLink>
                 <NavLink to="/career">Career</NavLink>
             </div>
-            <div className='login-btn flex gap-5'>
-                <img src={User} alt="" />
-                <button className='btn btn-primary px-10'>LogIn</button>
+            <div className=' flex gap-5'>
+                <img className='bg-none' src={User} alt="" />
+                <a href="/auth/login">
+                    <button className='btn btn-primary px-10'>LogIn</button>
+                </a>
             </div>
         </div>
     );
